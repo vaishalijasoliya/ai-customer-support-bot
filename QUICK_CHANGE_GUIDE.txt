@@ -1,0 +1,50 @@
+================================================================================
+                    QUICK GUIDE: Change Company Name
+================================================================================
+
+METHOD 1: Edit .env File (Easiest)
+-----------------------------------
+1. Open .env file in your project folder
+2. Find: COMPANY_NAME=Your Company
+3. Change to: COMPANY_NAME=Your New Company Name
+4. Save file
+5. Restart Streamlit app
+
+METHOD 2: Use Python Script (Fastest)
+--------------------------------------
+Run this command:
+  python change_company.py "Your New Company Name"
+
+Example:
+  python change_company.py "Acme Corporation"
+  python change_company.py "Tech Solutions Inc" "Alex"
+
+================================================================================
+
+WHAT GETS UPDATED:
+------------------
+✅ Chatbot header/title
+✅ System prompt (how bot introduces itself)
+✅ Footer text
+✅ Admin panel display
+✅ All references throughout the app
+
+================================================================================
+
+AFTER CHANGING:
+---------------
+1. Stop Streamlit (Ctrl+C if running)
+2. Restart: streamlit run app_customer.py
+3. New name will appear everywhere!
+
+================================================================================
+
+YOU CAN ALSO CHANGE:
+-------------------
+CHATBOT_NAME=SupportBot  → Change bot's name
+COMPANY_NAME=Your Company → Change company name
+
+Both are in the .env file!
+
+================================================================================
+

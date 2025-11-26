@@ -1,0 +1,59 @@
+================================================================================
+                    AI CUSTOMER SUPPORT BOT - HOW TO RUN
+================================================================================
+
+EASIEST WAY (Windows):
+---------------------
+1. Double-click: SETUP_AND_RUN.bat
+   This will:
+   - Create .env file with your API key
+   - Install all dependencies
+   - Set up knowledge base
+   - Start the bot automatically
+
+2. Your browser will open automatically at http://localhost:8501
+
+================================================================================
+
+MANUAL WAY (Step by step):
+--------------------------
+1. Create .env file:
+   - Copy .env.example to .env
+   - Or run: python setup_env.py
+   - Or double-click: RUN.bat (just for setup)
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Set up knowledge base (optional):
+   python setup_knowledge_base.py
+
+4. Run the bot:
+   streamlit run app.py
+   
+   Or double-click: START.bat
+
+================================================================================
+
+QUICK START (Python script):
+----------------------------
+python complete_setup.py
+
+This does everything automatically!
+
+================================================================================
+
+TROUBLESHOOTING:
+---------------
+- If "pip not found": Install Python from python.org
+- If "streamlit not found": Run "pip install streamlit"
+- If API errors: Check your OpenAI API key in .env file
+- If port 8501 is busy: Streamlit will use the next available port
+
+================================================================================
+
+YOUR API KEY IS ALREADY CONFIGURED IN THE SETUP SCRIPTS!
+Just run SETUP_AND_RUN.bat and you're good to go!
+
+================================================================================
+

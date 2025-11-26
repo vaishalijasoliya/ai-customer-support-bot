@@ -1,0 +1,96 @@
+================================================================================
+              QUICK DEPLOYMENT GUIDE - Customer Side
+================================================================================
+
+FASTEST WAY: Streamlit Cloud (FREE, 5 minutes!)
+------------------------------------------------
+
+STEP 1: Push to GitHub
+-----------------------
+1. Create account at github.com (if you don't have one)
+2. Create new repository
+3. In your project folder, run:
+
+   git init
+   git add .
+   git commit -m "AI Customer Support Bot"
+   git remote add origin https://github.com/YOUR_USERNAME/repo-name.git
+   git push -u origin main
+
+STEP 2: Deploy to Streamlit Cloud
+-----------------------------------
+1. Go to: https://share.streamlit.io
+2. Sign in with GitHub
+3. Click "New app"
+4. Select your repository
+5. Set Main file: app_customer.py
+6. Click "Deploy"
+7. Wait 2 minutes - DONE! ✅
+
+STEP 3: Configure (Add Secrets)
+--------------------------------
+1. In Streamlit Cloud, click Settings (⚙️)
+2. Click "Secrets"
+3. Add these variables:
+
+   OPENAI_API_KEY = "sk-your-key"
+   COMPANY_NAME = "Client Company Name"
+   CHATBOT_NAME = "SupportBot"
+   TEST_MODE = "false"
+
+4. Save - App restarts automatically
+
+STEP 4: Get Your URL
+---------------------
+Your app is live at:
+https://your-app-name.streamlit.app
+
+Share this with customers! 🎉
+
+================================================================================
+
+FOR ADMIN PANEL (Separate Deployment)
+--------------------------------------
+1. Deploy app_admin.py separately
+2. Same steps, but use app_admin.py as main file
+3. Add ADMIN_PASSWORD to secrets
+4. Give client the admin URL + password
+
+================================================================================
+
+WHAT CUSTOMERS GET:
+-------------------
+✅ Public chat interface (clean, no admin features)
+✅ 24/7 AI support
+✅ Knowledge base integration
+✅ Professional appearance
+✅ Works on mobile and desktop
+
+================================================================================
+
+WHAT YOU NEED:
+-------------
+✅ GitHub account (free)
+✅ Streamlit Cloud account (free)
+✅ Client's OpenAI API key (they pay for usage)
+✅ 5 minutes of time
+
+================================================================================
+
+COST:
+-----
+💰 FREE hosting on Streamlit Cloud
+💰 Client pays for OpenAI API usage (~$50-200/month)
+💰 You charge for setup/maintenance
+
+================================================================================
+
+READY TO DEPLOY?
+----------------
+1. Follow steps above
+2. Test the deployed app
+3. Share URL with client
+4. Done! 🚀
+
+================================================================================
+
